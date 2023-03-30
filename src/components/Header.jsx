@@ -9,12 +9,12 @@ function Header() {
       <div className="max-w-[1240px] py-[8px] items-center flex justify-between mx-auto">
         <div className="text-3xl font-bold">Tech.io</div>
         {toggle ? (
-          <AiOutlineMenu
+          <AiOutlineCloseCircle
             onClick={() => setToggle(!toggle)}
             className="text-white text-2xl md:hidden block"
           />
         ) : (
-          <AiOutlineCloseCircle
+          <AiOutlineMenu
             onClick={() => setToggle(!toggle)}
             className="text-white text-2xl md:hidden block"
           />
@@ -26,7 +26,10 @@ function Header() {
           <li>About</li>
           <li>Contact</li>
         </ul>
-        <ul className="md:hidden w-full h-screen text-white fixed bg-black top-[84px] left-[0]">
+        <ul
+          className={`duration-500 md:hidden w-full h-screen text-white fixed bg-black top-[84px] 
+            ${toggle ? "left-[0]" : "left-[100%]"}`}
+        >
           <li className="p-5">Home</li>
           <li className="p-5">Company</li>
           <li className="p-5">Resources</li>
