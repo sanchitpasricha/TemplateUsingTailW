@@ -3,7 +3,7 @@ import Typed from "react-typed";
 
 function Banner() {
   return (
-    <div className="bg-[#2699fb] w-full py-[100px]">
+    <div className="bg-[#2699fb] w-full py-[150px]">
       <div className="max-w-[1240px] my-[100px] mx-auto text-center font-bold">
         <div className="text-3xl py-[20px]">Learn with us</div>
         <h2 className="text-white py-[20px] text-4xl md:text-5xl">
