@@ -22,6 +22,9 @@ function Banner() {
             loop
           />
         </div>
+        <button className="bg-black rounded p-3 text-white w-[30%] md:w-[20%] my-5">
+          Get started
+        </button>
       </div>
     </div>
   );

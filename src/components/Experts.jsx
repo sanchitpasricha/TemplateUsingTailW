@@ -19,6 +19,9 @@ function Experts() {
           since the 1500s, when an unknown printer took a galley of type and
           scrambled it to make a type specimen book.
         </p>
+        <button className="bg-black rounded p-3 text-white w-[40%]">
+          Get started
+        </button>
       </div>
     </div>
   );
